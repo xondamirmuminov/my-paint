@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <canvas id="canvas"></canvas>
+    <div class="controller">
+        <button onclick="clearCanvas()" class="btn">Clear</button>
+        <button onclick="undoDraw()" class="btn">Undo</button>
+        <div onclick="changeBg(this)" class="bg" style="background: blue;"></div>
+        <div onclick="changeBg(this)" class="bg" style="background: red;"></div>
+        <div onclick="changeBg(this)" class="bg" style="background: green;"></div>
+        <div onclick="changeBg(this)" class="bg" style="background: yellow;"></div>
+        <div onclick="changeBg(this)" class="bg" style="background: black;"></div>
+        <div onclick="changeBg(this)" class="bg" style="background: white;"></div>
+        <input oninput="drawColor = this.value" type="color">
+        <input oninput="drawWidth = this.value" type="range" min="1" max="100">
+    </div>
+    <script src="./js/canvas.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #313131;
+}
+
+#canvas {
+    margin: 20px;
+    box-shadow: 10px 10px 10px black;
+    cursor: crosshair;
+}
+
+.controller {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.controller > * {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.bg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.btn {
+    padding: 8px 30px; 
+    background: black;
+    color: white;
+    border: 1px solid white;
+}
